@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-100 flex justify-center items-center min-h-screen">
+    <div class="bg-blue-200 p-6 rounded-2xl shadow-lg w-[400px] h-[700px] flex flex-col">
+        
+        <!-- Current Weather -->
+        <div class="flex items-center justify-between p-4">
+            <!-- Weather Circle -->
+            <div class="w-40 h-40 bg-yellow-300 rounded-full flex flex-col items-center justify-center shadow-lg">
+                <span class="text-5xl font-bold">4°C</span>
+                <span class="text-xl text-gray-700 font-semibold mt-1">Sunny</span>
+            </div>
+        
+            <!-- Location & Weather Details -->
+            <div class="text-right">
+                <!-- Location Dropdown -->
+                <div class="relative inline-block text-left">
+                    <select class="text-lg font-bold bg-transparent border border-gray-300 rounded-md p-1">
+                        <option>📍 Philadelphia</option>
+                        <option>📍 New York</option>
+                        <option>📍 Los Angeles</option>
+                        <option>📍 Chicago</option>
+                    </select>
+                </div>
+                <br>
+                <br>
+                <!-- Weather Info -->
+                <p class="text-sm text-gray-500">🌡️ -3°C ~ 5°C</p>
+                <p class="text-sm text-gray-500">☀️ Sunny to Rainy</p>
+                <p class="text-sm text-gray-500">🌬️ 3.4 mph SSE</p>
+            </div>
+        </div>
+
+        <!-- Scrollable Hourly Forecast -->
+        <p class="text-center">Hourly Weather Breakdown</p>
+        <div class="bg-gray-100 p-3 rounded-lg shadow-md overflow-x-auto whitespace-nowrap">
+            <div class="flex space-x-4">
+                <div class="text-center w-16 p-2 bg-gray-100 rounded-md">
+                    <p class="text-xs">0:00</p>
+                    <p>🌙</p>
+                    <p class="text-sm">-3°C</p>
+                </div>
+                <div class="text-center w-16 p-2 bg-gray-100 rounded-md">
+                    <p class="text-xs">1:00</p>
+                    <p>🌙</p>
+                    <p class="text-sm">-3°C</p>
+                </div>
+                <div class="text-center w-16 p-2 bg-gray-100 rounded-md">
+                    <p class="text-xs">2:00</p>
+                    <p>🌙</p>
+                    <p class="text-sm">-3°C</p>
+                </div>
+                <div class="text-center w-16 p-2 bg-gray-100 rounded-md">
+                    <p class="text-xs">3:00</p>
+                    <p>🌙</p>
+                    <p class="text-sm">-2°C</p>
+                </div>
+                <div class="text-center w-16 p-2 bg-gray-100 rounded-md">
+                    <p class="text-xs">4:00</p>
+                    <p>🌙</p>
+                    <p class="text-sm">-1°C</p>
+                </div>
+                <div class="text-center w-16 p-2 bg-gray-100 rounded-md">
+                    <p class="text-xs">5:00</p>
+                    <p>🌙</p>
+                    <p class="text-sm">-1°C</p>
+                </div>
+                <div class="text-center w-16 p-2 bg-gray-100 rounded-md">
+                    <p class="text-xs">6:00</p>
+                    <p>☀️</p>
+                    <p class="text-sm">0°C</p>
+                </div>
+                <div class="text-center w-16 p-2 bg-gray-100 rounded-md">
+                    <p class="text-xs">7:00</p>
+                    <p>☀️</p>
+                    <p class="text-sm">1°C</p>
+                </div>
+                <div class="text-center w-16 p-2 bg-gray-100 rounded-md">
+                    <p class="text-xs">8:00</p>
+                    <p>☀️</p>
+                    <p class="text-sm">2°C</p>
+                </div>
+                <div class="text-center w-16 p-2 bg-gray-100 rounded-md">
+                    <p class="text-xs">9:00</p>
+                    <p>☀️</p>
+                    <p class="text-sm">2°C</p>
+                </div>
+                <div class="text-center w-16 p-2 bg-gray-100 rounded-md">
+                    <p class="text-xs">10:00</p>
+                    <p>☀️</p>
+                    <p class="text-sm">3°C</p>
+                </div>
+                <div class="text-center w-16 p-2 bg-gray-200 rounded-md">
+                    <p class="text-xs">11:00</p>
+                    <p>☀️</p>
+                    <p class="text-sm">4°C</p>
+                </div>
+                <div class="text-center w-16 p-2 bg-gray-100 rounded-md">
+                    <p class="text-xs">12:00</p>
+                    <p>☀️</p>
+                    <p class="text-sm">4°C</p>
+                </div>
+                <div class="text-center w-16 p-2 bg-gray-100 rounded-md">
+                    <p class="text-xs">13:00</p>
+                    <p>☁️</p>
+                    <p class="text-sm">5°C</p>
+                </div>
+                <div class="text-center w-16 p-2 bg-gray-100 rounded-md">
+                    <p class="text-xs">14:00</p>
+                    <p>☁️</p>
+                    <p class="text-sm">4°C</p>
+                </div>
+                <div class="text-center w-16 p-2 bg-gray-100 rounded-md">
+                    <p class="text-xs">15:00</p>
+                    <p>🌧️</p>
+                    <p class="text-sm">4°C</p>
+                </div>
+                <div class="text-center w-16 p-2 bg-gray-100 rounded-md">
+                    <p class="text-xs">16:00</p>
+                    <p>🌧️</p>
+                    <p class="text-sm">4°C</p>
+                </div>
+                <div class="text-center w-16 p-2 bg-gray-100 rounded-md">
+                    <p class="text-xs">17:00</p>
+                    <p>🌧️</p>
+                    <p class="text-sm">3°C</p>
+                </div>
+                <div class="text-center w-16 p-2 bg-gray-100 rounded-md">
+                    <p class="text-xs">18:00</p>
+                    <p>🌧️</p>
+                    <p class="text-sm">2°C</p>
+                </div>
+                <div class="text-center w-16 p-2 bg-gray-100 rounded-md">
+                    <p class="text-xs">19:00</p>
+                    <p>🌧️</p>
+                    <p class="text-sm">2°C</p>
+                </div>
+                <div class="text-center w-16 p-2 bg-gray-100 rounded-md">
+                    <p class="text-xs">20:00</p>
+                    <p>🌧️</p>
+                    <p class="text-sm">1°C</p>
+                </div>
+                <div class="text-center w-16 p-2 bg-gray-100 rounded-md">
+                    <p class="text-xs">21:00</p>
+                    <p>☁️</p>
+                    <p class="text-sm">0°C</p>
+                </div>
+                <div class="text-center w-16 p-2 bg-gray-100 rounded-md">
+                    <p class="text-xs">22:00</p>
+                    <p>☁️</p>
+                    <p class="text-sm">0°C</p>
+                </div>
+                <div class="text-center w-16 p-2 bg-gray-100 rounded-md">
+                    <p class="text-xs">23:00</p>
+                    <p>☁️</p>
+                    <p class="text-sm">-1°C</p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="flex justify-between p-4 space-x-4 h-96">
+            <!-- Scrollable Weekly Forecast -->
+            <div class="w-2/3 h-64 overflow-y-auto bg-gray-100 p-2 rounded-md">
+                <p class="text-center text-xl">Weather Forecast</p>
+                <br>
+                <div class="border-b p-2 bg-blue-100 rounded-lg">
+                    <p class="font-semibold">Jan 21, 2025</p>
+                    <p class="text-lg">☀️   <span class="text-sm">-3°C ~ 5°C</span></p>
+                </div>
+                <div class="border-b p-2">
+                    <p class="font-semibold">Jan 22, 2025</p>
+                    <p class="text-lg">🌧️   <span class="text-sm">-7°C ~ 2°C</span></p>
+                </div>
+                <div class="border-b p-2">
+                    <p class="font-semibold">Jan 23, 2025</p>
+                    <p class="text-lg">☁️   <span class="text-sm">-5°C ~ 5°C</span></p>
+                </div>
+                <div class="border-b p-2">
+                    <p class="font-semibold">Jan 24, 2025</p>
+                    <p class="text-lg">☀️   <span class="text-sm">-4°C ~ 6°C</span></p>
+                </div>
+                <div class="border-b p-2">
+                    <p class="font-semibold">Jan 25, 2025</p>
+                    <p class="text-lg">☀️   <span class="text-sm">-2°C ~ 7°C</span></p>
+                </div>
+            </div>
+        
+
+            <div class="flex flex-col w-1/3 space-y-4">
+                <!-- Sunset Section -->
+                 <!-- <div class="bg-gray-200 p-4 rounded-md text-center"> -->
+                <div class="relative bg-cover bg-center rounded-md text-center p-6" style="background-image: url('/hw1/assests/365239.png');">
+                    <!-- <div class="bg-gray-200 p-4 rounded-md text-center"> -->
+                        <p class="text-lg font-bold text-gray-700">Sunset</p>
+                        <p class="text-2xl text-white">17:08</p>
+                    <!-- </div> -->
+                </div>
+                <br>
+                <br>
+                <!-- Plan Button -->
+                <button class="bg-green-500 text-white p-3 rounded-md w-full hover:bg-green-600 transition-colors duration-300">
+                    Plan Your Trip
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- 
+Citation:
+I utilized ChatGPT when writing part of my code.
+I utilized tailwind library for better styling.
+The background of Sunset Time part was from this link:https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fsunset_365239&psig=AOvVaw2hACuGByiv8LocdO9qmVJM&ust=1738525295016000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIjB8cmdo4sDFQAAAAAdAAAAABAE 
+-->
